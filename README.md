@@ -1,3 +1,7 @@
+# Things to know
+- GLFW for window & user input management
+- GLM for math stuff
+- glslc for shader compilation
 
 # Install (Arch, I don't know about other systems)
 - For Intel/AMD (Mesa): sudo pacman -Syu vulkan-headers vulkan-tools vulkan-icd-loader vulkan-validation-layers glfw mesa
