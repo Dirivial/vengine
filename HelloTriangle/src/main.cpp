@@ -2,9 +2,9 @@
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 
-#include <format>
 #include <cstdlib>
 #include <cstring>
+#include <format>
 #include <iostream>
 #include <stdexcept>
 #include <vector>
@@ -93,6 +93,8 @@ private:
   }
 
   void cleanup() {
+    vkDestroyInstance(instance, nullptr);
+
     glfwDestroyWindow(window);
 
     glfwTerminate();
